@@ -33,16 +33,6 @@ export default function HospitalDetails({ gallery }) {
           <li>Be aware of your surroundings</li>
         </ul>
       </div>
-      <div className="img-slider">
-        <h4 className="text-center mb-3">Destination Images</h4>
-        <Slider {...slickSettings}>
-          {gallery && gallery.map((galleryItem) => (
-            <div className="slider-item" key={ galleryItem.id }>
-              <img src={ galleryItem.img } alt="slider img" />
-            </div>
-          ))}
-        </Slider>
-      </div>
     </>
   )
 }
