@@ -32,6 +32,7 @@ export default function HospitalDetails({ hospitalDetails }) {
           ))}
       </ol>
       <br />
+      <div>
       <a
         href="mailto:xyz@yourapplicationdomain.com"
         style={{
@@ -43,6 +44,8 @@ export default function HospitalDetails({ hospitalDetails }) {
       >
         Send Enquiry
       </a>
+      <div className="satvik">Packages start from <strong>₹{hospitalDetails.price}</strong></div>
+      </div>
       <br />
     </div>
   );
