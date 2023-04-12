@@ -13,7 +13,7 @@ export default function PlaceDetails({ placeDetails }) {
       <p className="text-ash mb-3">
         <FaMapMarkerAlt className="text-orange me-1" /> {placeDetails.location}
       </p>
-      {placeDetails.images && <Carousel images={placeDetails.images} />}
+      {placeDetails.images && <Carousel images={placeDetails.images}/>}
       <br />
       <p>{placeDetails.description}</p>
       <br />

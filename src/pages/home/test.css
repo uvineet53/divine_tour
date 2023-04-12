@@ -52,3 +52,12 @@
     font-weight: 300;
     margin: 0 0 20px;
   }
+
+  @media (max-width:576px) {
+    .services__wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }

@@ -19,7 +19,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-        <Container>
+        <Container className="services__wrapper">
         <figure className="snip153">
           <RiHotelBedFill size={30}/>
         <figcaption>

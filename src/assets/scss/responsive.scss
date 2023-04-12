@@ -101,7 +101,10 @@
  
 /* small mobile :576px. */
 @media (max-width: 576px) {
-    
+  .snip1533 {
+    display: flex;
+    flex-direction: column;
+   }
 }
 
 @media only screen and (max-width: 479px){

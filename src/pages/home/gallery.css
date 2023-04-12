@@ -1,7 +1,7 @@
 .snip1533 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     color: #01959a;
-    display: inline-block;
+    display: wrap;
     font-size: 16px;
     margin: 35px 10px 10px;
     max-width: 310px;
@@ -62,4 +62,13 @@
     font-style: italic;
     font-weight: 300;
     margin: 0 0 20px;
+  }
+
+  @media (max-width:576px) {
+    .testimonials__wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }

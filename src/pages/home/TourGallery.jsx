@@ -17,7 +17,7 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-        <Container fluid className="px-20" style={{"display":"flex","justifyContent":"center"}}>
+        <Container fluid className="px-20 testimonials__wrapper" style={{"display":"flex","justifyContent":"center"}}>
           <figure className="snip1533">
             <figcaption>
               <blockquote>
