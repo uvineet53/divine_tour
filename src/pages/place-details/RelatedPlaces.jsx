@@ -27,7 +27,7 @@ export default function PlaceDetails({ places }) {
             {places && places.slice(0, 3).map((place) => (
               <Col md={4} className='mb-3' key={ place.id }>
                 <Card className='h-100 shadow border-0'>
-                  <Card.Img variant="top" src={ place.img } />
+                  <Card.Img variant="top" src={ place.images[0] } />
                   <Card.Body>
                     <Row className='align-items-center'>
                       <Col xs={9}>
