@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import {db} from '../../firebase/firebase'
 
 // icons
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
@@ -10,24 +9,36 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    db.collection('messages').add({
-      name,
-      email,
-      message,
-    })
-      .then(() => {
-        alert('Your message has been sent successfully!');
-        setName('');
-        setEmail('');
-        setMessage('');
-      })
-      .catch((error) => {
-        alert(error.message);
-      });
+  const data = {
+    name: name,
+    email: email,
+    message: message
   };
+
+  try {
+    const response = await fetch('https://formspree.io/f/mayzlllw', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      alert('Your message has been sent successfully!');
+      setName('');
+      setEmail('');
+      setMessage('');
+    } else {
+      throw new Error('Something went wrong.');
+    }
+  } catch (error) {
+    alert(error.message);
+  }
+};
 
   return (
     <>
