@@ -29,7 +29,7 @@ export default function PageHeader() {
         break;
       case 'hospitals':
         setPage({
-          pageName: 'All Medical Packages',
+          pageName: 'Medical Tourism',
           bgImage: bg1
         })
         break;
