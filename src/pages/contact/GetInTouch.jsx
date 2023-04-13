@@ -1,10 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import {db} from '../../firebase/firebase'
 
 // icons
-import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    db.collection('messages').add({
+      name,
+      email,
+      message,
+    })
+      .then(() => {
+        alert('Your message has been sent successfully!');
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+
   return (
     <>
       {/* get in touch start */}
@@ -16,22 +40,63 @@ export default function Contact() {
                 <h6 className="text-orange text-uppercase">Get in touch</h6>
                 <h2 className='text-uppercase'>REACH & CONTACT US!</h2>
                 <p className="text-ash">
-                  
-                </p>
-              </div>
-              <div className="social-icon-area">
+                <div className="social-icon-area">
                 <ul>
                   <li>
                     <a href="#f"><FaFacebookF /></a>
                   </li>
                   <li>
-                    <a href="#d"><FaTwitter /></a>
+                    <a href="#t"><FaTwitter /></a>
                   </li>
                   <li>
-                    <a href="#d"><FaYoutube /></a>
+                    <a href="#d"><FaInstagram /></a>
                   </li>
                 </ul>
               </div>
+                </p>
+              </div>
+              <form onSubmit={handleSubmit}>
+                <div className='mb-3'>
+                  <label htmlFor='name' className='form-label'>
+                    Name
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control'
+                    id='name'
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div className='mb-3'>
+                  <label htmlFor='email' className='form-label'>
+                    Email address
+                  </label>
+                  <input
+                    type='email'
+                    className='form-control'
+                    id='email'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div className='mb-3'>
+                  <label htmlFor='message' className='form-label'>
+                    Message
+                  </label>
+                  <textarea
+                    className='form-control'
+                    id='message'
+                    rows='5'
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  ></textarea>
+                </div>
+                <button type='submit' className='btn btn-primary'>
+                  Send
+                </button>
+              </form>
+
             </Col>
             <Col md={5}>
               {/* map */}
