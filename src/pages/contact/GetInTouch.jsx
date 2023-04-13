@@ -7,6 +7,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
 const handleSubmit = async (e) => {
@@ -15,6 +16,7 @@ const handleSubmit = async (e) => {
   const data = {
     name: name,
     email: email,
+    phone:phone,
     message: message
   };
 
@@ -32,6 +34,7 @@ const handleSubmit = async (e) => {
       setName('');
       setEmail('');
       setMessage('');
+      setPhone('');
     } else {
       throw new Error('Something went wrong.');
     }
@@ -81,7 +84,7 @@ const handleSubmit = async (e) => {
                 </div>
                 <div className='mb-3'>
                   <label htmlFor='email' className='form-label'>
-                    Email address
+                    Email Address
                   </label>
                   <input
                     type='email'
@@ -89,6 +92,18 @@ const handleSubmit = async (e) => {
                     id='email'
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div className='mb-3'>
+                  <label htmlFor='email' className='form-label'>
+                    Phone Number
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control'
+                    id='phone'
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                   />
                 </div>
                 <div className='mb-3'>
