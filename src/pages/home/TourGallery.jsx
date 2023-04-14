@@ -22,48 +22,40 @@ export default function Home() {
             <figcaption>
               <blockquote>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque massa velit
+                I am just so happy to share my experience with you. The team is really co-operative, trustworthy. They managed everything for us.
                 </p>
               </blockquote>
-              <h3>Satvik</h3>
-              <h4>Lorem Ipsum</h4>
+              <h3>Ayesha sharma</h3>
             </figcaption>
           </figure>
           <figure className="snip1533">
             <figcaption>
               <blockquote>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque massa velit
+                Guys, this is one of the best travel company they give best services at reasonable prices.it was so easy and effortless to book and even everything was managed by them to the last detail.
                 </p>
               </blockquote>
-              <h3>Satvik</h3>
-              <h4>Lorem Ipsum</h4>
+              <h3>Lakshay kumar</h3>
             </figcaption>
           </figure>
           <figure className="snip1533">
             <figcaption>
               <blockquote>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque massa velit
+                I highly recommend them for all future travels. My wife and I had an amazing experience in our Dubai tour. The hotels booked were really good as well as the food served was excellent.
                 </p>
               </blockquote>
-              <h3>Satvik</h3>
-              <h4>Lorem Ipsum</h4>
+              <h3>Aniket Bhardwaj</h3>
             </figcaption>
           </figure>
           <figure className="snip1533">
             <figcaption>
               <blockquote>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque massa velit
+                It was their efforts that want us to travel with them again. All services were excellent and as per expectations. Thanks for making our trip the most memorable one.
                 </p>
               </blockquote>
-              <h3>Satvik</h3>
-              <h4>Lorem Ipsum</h4>
+              <h3>Vanshika Mittal</h3>
             </figcaption>
           </figure>
         </Container>
