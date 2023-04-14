@@ -32,7 +32,7 @@ export default function Home() {
             <figcaption>
               <blockquote>
                 <p>
-                Guys, this is one of the best travel company they give best services at reasonable prices.it was so easy and effortless to book and even everything was managed by them to the last detail.
+                Guys, this is one of the best travel company they give best services at reasonable prices.It was so easy and effortless to book and even everything was managed by them to the last detail.
                 </p>
               </blockquote>
               <h3>Lakshay kumar</h3>
