@@ -1,9 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {Col, Container, Row} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 
 // images
-import logo from '../assets/img/logo.png';
 
 export default function Footer() {
   return (
