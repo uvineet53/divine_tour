@@ -17,7 +17,6 @@ export default function Contact() {
                 <h4 className='text-black text-uppercase'>email address</h4>
                 <ul>
                   <li>support@gmail.com</li>
-                  <li>info@domain.com</li>
                 </ul>
               </div>
             </Col>
@@ -26,8 +25,7 @@ export default function Contact() {
                 <span className="icon mb-4"><FaPhoneAlt /></span>
                 <h4 className='text-black text-uppercase'>PHONE NUMBER</h4>
                 <ul>
-                  <li>+880 165367444</li>
-                  <li>+880 165367445</li>
+                  <li>+91-7011255685</li>
                 </ul>
               </div>
             </Col>
@@ -36,7 +34,7 @@ export default function Contact() {
                 <span className="icon mb-4"><FaMapMarkerAlt /></span>
                 <h4 className='text-black text-uppercase'>ADDRESS LOCATION</h4>
                 <ul>
-                  <li>Gurgaon, India</li>
+                  <li>Sector 46, Gurgaon, India</li>
                 </ul>
               </div>
             </Col>
