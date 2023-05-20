@@ -31,7 +31,7 @@ export default function About() {
               <div className="about-content">
                 <h3 className="text-red mb-3">HOW WE ARE BEST FOR TRAVEL !</h3>
                 <p className="text-ash">
-                DIVINE TOUR AND EVENTS is all set to offer inbound tours to charming destinations across the world. The company is dedicated to provide quality tourism products and ensure that its partners get new products as well as unbeatable value add-ons to existing product lines, with the aim of maximizing established and successful relationships and creating high yielding business opportunities.
+                DIVINE TOURS AND TRAVEL is all set to offer inbound tours to charming destinations across the world. The company is dedicated to provide quality tourism products and ensure that its partners get new products as well as unbeatable value add-ons to existing product lines, with the aim of maximizing established and successful relationships and creating high yielding business opportunities.
                   <br />
                   DIVINE offers expert local knowledge and logistical fulfillment and has experience in managing large incentive groups, cultural tours and special interest tours. Whether it's a well earned incentive programme or a special interest group, the objective at DIVINE is to instill a sense of reward and fulfillment through well designed itineraries.
                   <br/>
