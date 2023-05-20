@@ -34,7 +34,9 @@ export default function Contact() {
                 <span className="icon mb-4"><FaMapMarkerAlt /></span>
                 <h4 className='text-black text-uppercase'>ADDRESS LOCATION</h4>
                 <ul>
-                  <li>Sector 46, Gurgaon, India</li>
+                  <li>Plot no 2673 A,  
+Sector 46 near HUDA market
+Gurgaon 122003</li>
                 </ul>
               </div>
             </Col>
