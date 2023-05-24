@@ -16,7 +16,7 @@ export default function Contact() {
                 <span className="icon mb-4"><FaRegEnvelope /></span>
                 <h4 className='text-black text-uppercase'>email address</h4>
                 <ul>
-                  <li>support@gmail.com</li>
+                  <li>divinetoursandtravel1122@gmail.com</li>
                 </ul>
               </div>
             </Col>
